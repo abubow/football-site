@@ -233,34 +233,51 @@ body {
 }
 
 @media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        height: auto;
-        padding: 2rem 0;
-    }
+	.hero {
+		flex-direction: column;
+		height: auto;
+		padding: 2rem 0;
+	}
 
-    .hero > .text {
-        width: 100%;
-        max-width: 80%;
-    }
+	.hero > .text {
+		width: 100%;
+		max-width: 80%;
+	}
 
-    .hero img {
-        width: 100%;
-        max-width: 80%;
-        margin: 10px 10%;
-    }
+	.hero img {
+		width: 100%;
+		max-width: 80%;
+		margin: 10px 10%;
+	}
 }
 /* Features section styles */
 .features {
 	padding: 2rem 0;
 	text-align: center;
 	background-color: var(--tertiary-color);
+	color: var(--quaternary-color);
+}
+
+.features:nth-child(even) {
+	background-color: var(--secondary-color);
+	color: var(--primary-color);
 }
 
 .features h2 {
 	margin-bottom: 60px;
 }
 
+.features p {
+	font-size: 18px;
+	line-height: 1.5;
+	max-width: 80vw;
+	margin-bottom: 60px;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
 .feature {
 	display: flex;
 	flex-direction: column;
@@ -283,30 +300,30 @@ body {
 .feature p {
 	font-size: 18px;
 	line-height: 1.5;
-	max-width: 600px;
+	max-width: 80vw;
 	text-align: center;
 	color: var(--quaternary-color);
 }
 
 @media (max-width: 768px) {
-    .features {
-        padding: 2rem 0;
-    }
+	.features {
+		padding: 2rem 0;
+	}
 
-    .feature {
-        margin-bottom: 40px;
-    }
+	.feature {
+		margin-bottom: 40px;
+	}
 
-    .feature h3 {
-        font-size: 24px;
-    }
+	.feature h3 {
+		font-size: 24px;
+	}
 
-    .feature p {
-        font-size: 16px;
-    }
-    .feature img {
-        max-width: 80%;
-    }
+	.feature p {
+		font-size: 16px;
+	}
+	.feature img {
+		max-width: 80%;
+	}
 }
 /* Footer styles */
 .footer {
@@ -372,4 +389,42 @@ body {
 
 .footer .social-icons a:hover {
 	color: var(--secondary-color);
+}
+
+.rating {
+	border: 1px solid #ccc;
+	margin: 0 4rem 2rem 4rem;
+	padding: 2rem;
+    border-radius: 5px;
+}
+
+.rating:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.rating-header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.rating-name {
+	font-weight: bold;
+}
+
+.rating-stars {
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.star {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+	background-image: url("path/to/star.png");
+}
+
+.rating-review {
+	font-style: italic;
 }

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="style.css" />
+		<title>Football Lovers</title>
+        <script src="data.js"></script>
+		<script
+			defer
+			src="main.js"></script>
+		<!-- favicon -->
+		<link
+			rel="shortcut icon"
+			href="logo.svg"
+			type="image/x-icon" />
+	</head>
+	<body>
+		<header class="navbar">
+			<div class="navbar-logo">
+				<a href="#">
+					<img
+						src="logo.svg"
+						alt="Logo" />
+					<span>Football</span>
+				</a>
+			</div>
+			<button
+				class="navbar-toggle"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggle-icon"></span>
+			</button>
+			<nav class="navbar-menu">
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="Information.html">Information</a></li>
+					<li><a href="Reviews.html">Reviews</a></li>
+					<li><a href="About.html">About</a></li>
+				</ul>
+			</nav>
+
+			<nav class="desktop navbar-menu">
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="Information.html">Information</a></li>
+					<li><a href="Reviews.html">Reviews</a></li>
+					<li><a href="About.html">About</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section class="features">
+			<h1>Reviews</h1>
+			<p>
+				Average rating:
+				<span id="average-rating"></span>
+				/5
+			</p>
+		</section>
+		<section id="app" class="features"></section>
+		<section class="features">
+			<form id="review-form">
+				<label for="name">Name:</label>
+				<input
+					type="text"
+					id="name"
+					name="name"
+					placeholder="Enter your name"
+					required />
+				<label for="rating">Rating:</label>
+				<input
+					type="number"
+					id="rating"
+					name="rating"
+					min="1"
+					max="5"
+					required />
+				<label for="review">Review:</label>
+				<textarea
+					id="review"
+					name="review"
+					placeholder="Enter your review"
+					required></textarea>
+				<button
+					type="submit"
+					id="submit-btn">
+					Submit
+				</button>
+			</form>
+		</section>
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<form id="footer-form">
+							<label for="email">Join our mailing list:</label>
+							<input
+								type="email"
+								id="email"
+								name="email"
+								placeholder="Enter your email address"
+								required />
+							<input
+								type="hidden"
+								id="name"
+								name="name"
+								value="Your Name" />
+							<button
+								type="submit"
+								id="join-btn">
+								Join
+							</button>
+						</form>
+					</div>
+					<div class="col-md-6">
+						<p>Follow us on social media:</p>
+						<ul class="social-icons">
+							<li>
+								<a href="#"><i class="fa fa-facebook"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-twitter"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-instagram"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
